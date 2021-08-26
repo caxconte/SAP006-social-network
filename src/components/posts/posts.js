@@ -125,8 +125,6 @@ function printPost(post) {
       commentsPost(sendComment, commentUl);
     }
 
-
-
     //Parte das funções do Post Deletar, curtir, Editar
     const postSelectDelete = (postElement.querySelector('[data-delete]')).parentNode.parentNode.parentNode; //está bugada, pedir ajuda da Mari
     const deleteButton = postElement.querySelector('[data-delete]');
@@ -158,9 +156,10 @@ function printPost(post) {
     }
 
     if (saveEditButton === target) {
-      const saveTextarea = postElement.querySelector('[data-textPost]').value;
+      const saveTextarea = postElement.querySelector('[data-textPost]');
       console.log(saveTextarea);
-      updatePost(idPost, saveTextarea);
+      updatePost(idPost, saveTextarea.value);
+      saveTextarea.setAttribute('disabled', '');
 
       editionBtns.style.display = 'block';
       postElement.querySelector('[data-btnsEd]').style.display = 'none';
@@ -177,4 +176,3 @@ function printPost(post) {
 }
 
 export { printPost };
-

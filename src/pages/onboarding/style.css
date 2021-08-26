@@ -19,7 +19,11 @@
   padding: 2rem;
 }
 
-.custom-shape-divider-bottom-1629923973 {
+.vertical-svg {
+  display: none;
+}
+
+.horizontal-svg {
   position: absolute;
   left: 0;
   width: 100%;
@@ -29,16 +33,17 @@
   bottom: 43vh;
 }
 
-.custom-shape-divider-bottom-1629923973 svg {
+.horizontal-svg svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
   height: 154px;
 }
 
-.custom-shape-divider-bottom-1629923973 .shape-fill {
+.horizontal-svg .shape-fill {
   fill: #FFFFFF;
 }
+
 .content-title {
   display: flex;
   font-weight: 900;
@@ -98,3 +103,97 @@
   background: none;
 }
 
+@media screen and (min-width: 1024px) {
+  body {
+    overflow: hidden;
+  }
+
+  .welcome-container,
+  .conecte-container,
+  .comunique-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+  }
+
+  .onboard-header {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    max-width: 50vw;
+    justify-content: left;
+    overflow: hidden;
+  }
+
+  .onboard-img {
+    min-height: 100vh;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .horizontal-svg {
+    display: none;
+  }
+
+  .vertical-svg {
+    display: block;
+    overflow: hidden;
+  }
+
+  .vertical-svg {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(90deg);
+    bottom: 43vh;
+    margin-right: 10%;
+    overflow: hidden;
+  }
+  
+  .vertical-svg svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 154px;
+    margin-top: 8%;
+    overflow: hidden;
+  }
+  
+  .vertical-svg .shape-fill {
+    fill: #FFFFFF;
+    overflow: hidden;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    overflow: hidden;
+    padding: 10%;
+  }
+
+  .content-title {
+    font-size: 2.5rem;
+  }
+
+  .content-paragraph {
+    font-size: 2rem;
+  }
+
+  .btn-continue {
+    margin-top: 70%;
+    width: 12rem;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+
+  .btn-skip {
+    font-size: 1.2rem;
+    margin-bottom: -100%;
+    margin-right: -30%;
+  }
+}
