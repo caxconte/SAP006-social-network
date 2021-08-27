@@ -94,6 +94,7 @@ function printPost(post) {
     const commentsIdPost = target.dataset.comments;
     const commentUl = postElement.querySelector('[data-listcomments]');
     const commentsShow = postElement.querySelector('[data-comments]');
+    
 
     if (commentsShow) {
       postElement.querySelector('[data-showcomments]').style.display = 'block';
@@ -116,8 +117,7 @@ function printPost(post) {
         text: commentText.value,
         date: date.toLocaleString('pt-BR'),
       };
-      console.log(commentObj.idPost);
-
+      
       commentText.innerHTML = '';
 
       //cria o comentário com a função do services
@@ -126,12 +126,13 @@ function printPost(post) {
       //atualiza a section dos comentários
       commentUl.innerHTML = '';
       commentsPost(commentObj.idPost, commentUl);
-      console.log(commentUl);
     }
 
     //Parte das funções do Post Deletar, curtir, Editar
     const postSelectDelete = (postElement.querySelector('[data-delete]')).parentNode.parentNode.parentNode; //está bugada, pedir ajuda da Mari
     const deleteButton = postElement.querySelector('[data-delete]');
+
+ 
     if (deleteButton === target) {
       deletePost(idPost, postSelectDelete);
     }
@@ -161,7 +162,6 @@ function printPost(post) {
 
     if (saveEditButton === target) {
       const saveTextarea = postElement.querySelector('[data-textPost]').value;
-      console.log(saveTextarea);
       updatePost(idPost, saveTextarea);
 
       editionBtns.style.display = 'block';

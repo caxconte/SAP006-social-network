@@ -8,6 +8,7 @@
 
 .postContainer {
     width: 80vw;
+    /*height: 30vh; */
     margin-top: 40px;
     background-color: white;
     border-radius: 10px;
@@ -91,7 +92,8 @@
   
   @media screen and (min-width: 1024px) {
     .postContainer{
-      width: 50vw;        
+      width: 50vw;
+      /*height: 25vh; */       
     }  
   
     .publishBtn {
@@ -101,7 +103,7 @@
 @media screen and (max-width: 768px) {
     .feedContainer{
       width: 70vw;
-      height: 30vh;
+      /*height: 30vh;*/
       display: flex;
       justify-content: center;
       align-items: center;
