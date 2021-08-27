@@ -26,8 +26,7 @@ export const Feed = () => {
     <div class='postContainer'>
       <header id='postHeader' class='post-header'>
       <section class='userInfo'>
-        <img src='../../img/profileImg.png' id='pictureUser' class='imageCirclePostUser' height="40px" width="40px">
-        <p class='username'>${name}</p> 
+        <p class='username'>Por onde você navega?</p> 
       </section>      
       </header> 
       <form class='formContainer'>
@@ -49,15 +48,6 @@ export const Feed = () => {
 
   const textInput = root.querySelector('.postInput');
   const btnPublish = root.querySelector('.publishBtn');
-  const picturePost = root.querySelector('#pictureUser');
-  // insere a foto
-  if (photo) {
-    picturePost.src = photo;
-  }
-  // confere o nome
-  if (!name) {
-    root.querySelector('.username').innerText = 'User';
-  }
 
   // publica criando o objeto no post-firestore
   btnPublish.addEventListener('click', () => {

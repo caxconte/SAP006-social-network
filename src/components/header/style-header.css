@@ -22,7 +22,7 @@
     margin: 5% auto;
   }
 .profile,
-.btnLogout {
+.btnLogout, .toHome {
   color: #fff;
   border: none;
   background: none;
@@ -62,9 +62,7 @@
     color: #000;
 
 }
-.btnLogout{
+.btnLogout, .toHome{
     font-family: 'Raleway', sans-serif;
     text-shadow: 2px 2px #000000;
 }
-
-
