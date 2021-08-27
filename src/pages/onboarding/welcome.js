@@ -21,7 +21,7 @@ export const Welcome = () => {
       </header>
 
       <main class="content-paragraph">
-        <p>Bombordo é uma rede social </p> 
+        <p>Bombordo é uma rede social para velejadores...</p> 
       </main>
 
       <section class="section-continue-button">

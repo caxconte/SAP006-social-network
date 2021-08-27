@@ -21,7 +21,7 @@ export const Conecte = () => {
       </header>
 
       <main class="content-paragraph">
-        <p>Bombordo é uma rede social </p> 
+        <p>Pra quem já conhece e pra quem quer conhecer... </p> 
       </main>
 
       <section class="section-continue-button">

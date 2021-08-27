@@ -16,11 +16,11 @@ export const Comunique = () => {
 
   <section class="content">
     <header class="content-title">
-      Vamos navegar...
+      Comunique-se...
     </header>
 
     <main class="content-paragraph">
-      <p>Bombordo é uma rede social </p> 
+      <p>Com pessoas velejando por todo o mundo e por quem ainda não levantou sua âncora...</p> 
     </main>
 
     <section class="section-continue-button">
