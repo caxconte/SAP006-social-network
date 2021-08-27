@@ -15,11 +15,7 @@
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
     margin-left: auto;
-    margin-right: auto;    
-  }
-  
-  .postHeader {
-    color: white;  
+    margin-right: 15%;   
   }
   
   .formContainer {
@@ -41,15 +37,20 @@
     justify-content: space-between;
     color: white;
     padding: 3px;
-    background-color: #1f1f4b;
-    border-radius: 10px 10px 0 0 ;
-    box-shadow:0 5px 5px rgba(0, 0, 0, 0.2);  
-    min-height:45px, 
+    background-color: #427297;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 5px 5px rgb(0 0 0 / 20%)
+  }
+  .feedTimeline .post-header{
+    background-color: #29465C ;
+
   }
   
   .userInfo {
+    padding: 2%;
+    align-items: center;
     display: flex;
-    text-align: center;
+    width: 40%;
   }
   
   .imageCirclePostUser {
@@ -74,7 +75,8 @@
     display: flex;
     justify-content: flex-end;  
     font-size: 12px;
-    padding: 5px;
+    padding: 2%;
+    align-items: center;
   }
   
   .publishBtn {
@@ -82,57 +84,11 @@
     border-radius: 5px;
     padding: 5px;
     margin-right: 2%;
-    background-color: #ffd632;
-    color: #1f1f4b;
+    background-color: #E6B76C
+    ;
+    color: #29465C;
     width: 60px;  
   }
-  
-  /*.likeBtn {
-    border: none;
-    border-radius: 5px;
-    padding: 5px;
-    background-color: #ffd632;
-    color: #1f1f4b;
-    width: 60px;  
-  }
-  .likeBtn.inactive {
-    display: none;
-  }
-  .editBtn {
-    border: none;
-    border-radius: 5px;
-    padding: 5px;
-    background-color: #ffd632;
-    color: #1f1f4b;
-    width: 60px; 
-    display: none; 
-  }
-  .deleteBtn {
-    border: none;
-    border-radius: 5px;
-    padding: 5px;
-    background-color: #ffd632;
-    color: #1f1f4b;
-    width: 60px;  
-    display: none;
-  }
-  */
-  
-  
-  
-  /*
-  .feed-postContainer {
-    width: 40vw;
-    height: 25vh;
-    margin-top: 60px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    box-sizing: border-box;
-    margin-left: auto;
-    margin-right: auto; 
-  }
-  */
   
   @media screen and (min-width: 1024px) {
     .postContainer{
@@ -157,7 +113,7 @@
   @media screen and (max-width: 768px) {
       .feedContainer{
         width: 70vw;
-        height: 30vh;
+        /* height: 30vh; */
         display: flex;
         justify-content: center;
       }

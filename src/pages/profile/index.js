@@ -3,10 +3,10 @@ import { navigation } from '../../router.js';
 import {
   createHome, currentUser, getHome, uploadPicture, downloadPicture,
 } from '../../services/index.js';
-import { headerMenu } from '../../components/header/index.js';
+import { headerMenuProfile } from '../../components/header/menuProfile.js';
 
 export const Profile = () => {
-  headerMenu();
+  headerMenuProfile();
   const loggedUser = currentUser();
   const loggeduserId = loggedUser.uid;
 
@@ -18,10 +18,6 @@ export const Profile = () => {
       <form>
     
         <fieldset class='fieldset-container'>
-      
-        <div class='redefinition'>
-        <a href='#' id='reset'>Redefinir senha</a>
-        </div>
 
           <section class='profile-image-container'>
             <label class='label-image'>
@@ -52,21 +48,18 @@ export const Profile = () => {
               <input id='email' type='name' class='input-item' value='${loggedUser.email}' disabled>
             </p>
 
-     
+            <div class='redefinition'>
+            <a href='#' id='reset'>Redefinir senha</a>
+            </div>
             <nav class='btn-profile-container'>
               <button type='submit' id='saveBtn' class='saveBtn'>Salvar</button>
             </nav>
+           
 				  </div>
         </fieldset>
       </form>
     </section>
   </main>
-  </main>
-  <footer class="audiobox">
-  <div class="wave one"></div>
-  <div class="wave two"></div>
- <div class="wave three"></div>
- </footer>
   `;
 
   // upload da imagem:  storage.ref(`images/${loggeduserId}`).put(file);
